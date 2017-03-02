@@ -21,15 +21,15 @@ cat > /etc/docker/daemon.json <<END
     "metrics-addr": "0.0.0.0:9323" 
 }
 END
-# We need to reload the config file, however some options don't require reload (and more in the future) 
 
-# You can't pass both CLI args and use the daemon.json for parameters, so I'm using the RPM systemd unit file. 
+# You can't pass both CLI args and use the daemon.json for parameters, 
+# so I'm using the RPM systemd unit file because it doesn't pass any args 
 # This version changes the following as of 17.03:
 #  - Removes Requires=docker.socket
 #  - Removes docker.socket from After
 #  - Sets LimitNOFILE=infinity
 #  - Removes -H fd:// from ExecStart 
-wget -O /lib/systemd/system/docker.service https://raw.githubusercontent.com/docker/docker/v17.03.0-ce-rc1/contrib/init/systemd/docker.service.rpm
+wget -O /lib/systemd/system/docker.service https://raw.githubusercontent.com/docker/docker/v17.03.0-ce/contrib/init/systemd/docker.service.rpm
 systemctl daemon-reload
 systemctl restart docker
 
