@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+    customer:
+        image: swarmgs/customer
+        deploy:
+            replicas: 5
+    balance:
+        image: swarmgs/balance
+        ports:
+            - "5000:3000"
+        environment:
+            MYWEB_CUSTOMER_API: "customer:3000"
+        deploy:
+            replicas: 2
