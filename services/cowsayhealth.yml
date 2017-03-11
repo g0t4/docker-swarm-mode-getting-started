@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+    cowsay:
+        image: swarmgs/cowsayhealth
+        ports:
+            - "7001:80"
+        deploy:
+            placement:
+                constraints:
+                    - node.role==manager
+
