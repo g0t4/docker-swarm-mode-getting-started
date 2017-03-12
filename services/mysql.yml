@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+    mysql:
+        image: mysql
+        environment: 
+            MYSQL_USER: wordpress
+            MYSQL_DATABASE: wordpress
+            MYSQL_ROOT_PASSWORD: root
+        deploy:
+            placement:
+                constraints:
+                    - node.role==manager
