@@ -32,12 +32,12 @@ tmux select-pane -t 0
 tmux send-keys "$stackps" C-m
 
 # Show docker ps for health status 
-tmux split-window -v 
+tmux split-window -v -p 60
 tmux send-keys "$dockerps" C-m
 
 
 # Window for typing commands lower left
-tmux split-window -v 
+tmux split-window -v -p 60 
 tmux send-keys "$setdockerhost; clear" C-m
 
 tmux -2 attach-session -d -t $sessionname 
