@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+    calc:
+        image: swarmgs/calc
+        ports:
+            - "7000:80"
+        healthcheck:
+            test: curl -f -s -S http://localhost/calc/iseverythingok || exit 1
+            interval: 5s
+            timeout: 5s
+            #retries: 3
+        deploy:
+            placement:
+                constraints:
+                    - node.role==manager
+
