@@ -21,6 +21,8 @@ services:
         image: swarmgs/customer
     swarmgs-dotnetwebstress:
         image: swarmgs/dotnetwebstress
+    nginx:
+        image: nginx
     busybox:
         image: busybox
     node:
