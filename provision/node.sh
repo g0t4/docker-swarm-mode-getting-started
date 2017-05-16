@@ -18,9 +18,10 @@ cat > /etc/docker/daemon.json <<END
     ],
     "experimental": true,
     "debug": true,
-    "metrics-addr": "0.0.0.0:9323" 
+    "metrics-addr": "0.0.0.0:9323"
 }
 END
+#  "registry-mirrors": ["http://192.168.0.122:5000"],
 
 # You can't pass both CLI args and use the daemon.json for parameters, 
 # so I'm using the RPM systemd unit file because it doesn't pass any args 
