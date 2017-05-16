@@ -1,0 +1,39 @@
+version: '2'
+
+services:
+    swarmgs-calc:
+        image: swarmgs/calc
+    swarmgs-cowsayhealth:
+        image: swarmgs/cowsayhealth
+    swarmgs-cowsay:
+        image: swarmgs/cowsay
+    swarmgs-delaystop:
+        image: swarmgs/delaystop
+    swarmgs-payroll:
+        image: swarmgs/payroll
+    swarmgs-payroll-2:
+        image: swarmgs/payroll:2
+    swarmgs-payroll-1:
+        image: swarmgs/payroll:1
+    swarmgs-nodewebstress:
+        image: swarmgs/nodewebstress
+    swarmgs-customer:
+        image: swarmgs/customer
+    swarmgs-dotnetwebstress:
+        image: swarmgs/dotnetwebstress
+    busybox:
+        image: busybox
+    node:
+        image: node
+    debian:
+        image: debian
+    ubuntu:
+        image: ubuntu
+    alpine:
+        image: alpine
+    jetbrains-teamcity-server:
+        image: jetbrains/teamcity-server:2017.1.1
+    jetbrains-teamcity-agent:
+        image: jetbrains/teamcity-agent:2017.1.1
+    
+
