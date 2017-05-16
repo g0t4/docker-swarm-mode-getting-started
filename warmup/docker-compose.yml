@@ -37,5 +37,7 @@ services:
         image: jetbrains/teamcity-server:2017.1.1
     jetbrains-teamcity-agent:
         image: jetbrains/teamcity-agent:2017.1.1
+    mysql:
+        image: mysql
     
 
