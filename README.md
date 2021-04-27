@@ -31,3 +31,14 @@
 Updated as of 17.10
 
 Keep an eye out for future changes, this is the easiest spot for me to update.
+
+## Refresh coming soon! (2nd edition)
+
+I'm working on a refresh to this course to update it for changes since the 1st edition was published!
+- This second edition refresh will be out in May 2021
+- It will be condensed, so some content won't make the cut. 
+  - Fortunately, the vast majority of the current course is still applicable and thus you can always watch the expanded 1st edition (current course) after the refresh (2nd edition) comes out!
+  - Both are linked on my [author page.](https://www.pluralsight.com/authors/wes-mcclure) 
+  - And I'll keep a link here to both editions:
+- 2nd edition refresh: `Getting Started with Docker Swarm` (WIP)
+- [1st edition `Getting Started with Docker Swarm Mode`](https://www.pluralsight.com/courses/docker-swarm-mode-getting-started) (current course!)
